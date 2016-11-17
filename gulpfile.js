@@ -63,7 +63,7 @@ gulp.task('compass', function() {
 
 gulp.task('watch', function() {
     livereload.listen();
-    gulp.watch('app/assets/sass/**/*.scss', ['compass']);
+    gulp.watch('app/assets/scss/**/*.scss', ['compass']);
 });
 
 gulp.task('default', ['watch','compass', 'imagemin', 'js']);
